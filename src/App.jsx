@@ -17,8 +17,6 @@ const App = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
-  console.log(theme)
-
   return (
     <Router>
       <Navbar />
