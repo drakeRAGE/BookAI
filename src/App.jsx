@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Cards from './components/Card';
 import Pricing from './components/Pricing';
@@ -18,7 +18,7 @@ const App = () => {
   };
 
   return (
-    <Router>
+    <BrowserRouter>
       <Navbar />
       <ThemeToggle toggleTheme={toggleTheme} theme={theme} />
       <Routes>
@@ -26,7 +26,7 @@ const App = () => {
         <Route path="/api#pricing" element={<Pricing />} />
         <Route path="/api" element={<Pricing />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 };
 

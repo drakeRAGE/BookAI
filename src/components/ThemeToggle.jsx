@@ -1,4 +1,3 @@
-import React from 'react';
 import { BsSun, BsMoon } from 'react-icons/bs';
 
 const ThemeToggle = ({ toggleTheme, theme }) => {
