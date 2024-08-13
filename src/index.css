@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-bg: #8a2be2;
+    --accent-color: #8a2be2;
+    --text-color: #ffffff;
+    --text-secondary: #b3b3b3;
+    --gradient-1: linear-gradient(45deg, #726bff, #57b6fe);
+    --gradient-2: linear-gradient(45deg, #8a2be2, #4b0082);
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    background: var(--primary-bg);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+/* Light Mode */
+.light {
+    --primary-bg: #f8fafc;
+    --accent-color: #4b0082;
+    --text-color: #1E293B;
+    --text-secondary: #475569;
+}
+
+.dark {
+    --primary-bg: linear-gradient(135deg, #1e0533, #110a1f);
+    --accent-color: #8a2be2;
+    --text-color: #ffffff;
+    --text-secondary: #b3b3b3;
+}
+
+.bg-primary {
+    background: var(--primary-bg);
+}
+
+.text-foreground {
+    color: var(--text-color);
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    nav {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav a {
+        margin: 10px 20px 10px 0;
+    }
+}
+
